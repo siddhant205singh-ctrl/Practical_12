@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Wave - Official Band Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎸 Rhythm Wave</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#tour">Tour Dates</a></li>
+                <li><a href="#merchandise">Merchandise</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>RHYTHM WAVE</h1>
+            <p>Experience the music that moves your soul</p>
+            <button class="cta-button">Listen Now</button>
+        </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section id="music" class="music-section">
+        <h2>Latest Tracks</h2>
+        <div class="music-player">
+            <h3>Now Playing</h3>
+            <div class="player-controls">
+                <audio id="audioPlayer" controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="playlist">
+                <h4>Playlist</h4>
+                <ul>
+                    <li onclick="changeTrack('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', 'Electric Dreams')">
+                        ▶ Electric Dreams
+                    </li>
+                    <li onclick="changeTrack('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', 'Midnight Echo')">
+                        ▶ Midnight Echo
+                    </li>
+                    <li onclick="changeTrack('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', 'Neon Nights')">
+                        ▶ Neon Nights
+                    </li>
+                    <li onclick="changeTrack('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', 'Cosmic Journey')">
+                        ▶ Cosmic Journey
+                    </li>
+                    <li onclick="changeTrack('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3', 'Heartbeat')">
+                        ▶ Heartbeat
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Dates Section -->
+    <section id="tour" class="tour-section">
+        <h2>Upcoming Tour Dates</h2>
+        <div class="tour-container">
+            <div class="tour-date">
+                <div class="date-info">
+                    <span class="month">JAN</span>
+                    <span class="day">15</span>
+                </div>
+                <div class="event-info">
+                    <h3>New York Concert</h3>
+                    <p>Madison Square Garden</p>
+                    <p>Tickets: $75 - $150</p>
+                    <button class="book-btn">Book Tickets</button>
+                </div>
+            </div>
+
+            <div class="tour-date">
+                <div class="date-info">
+                    <span class="month">FEB</span>
+                    <span class="day">22</span>
+                </div>
+                <div class="event-info">
+                    <h3>Los Angeles Festival</h3>
+                    <p>Hollywood Bowl</p>
+                    <p>Tickets: $60 - $120</p>
+                    <button class="book-btn">Book Tickets</button>
+                </div>
+            </div>
+
+            <div class="tour-date">
+                <div class="date-info">
+                    <span class="month">MAR</span>
+                    <span class="day">10</span>
+                </div>
+                <div class="event-info">
+                    <h3>Chicago Music Festival</h3>
+                    <p>Grant Park Amphitheatre</p>
+                    <p>Tickets: $65 - $130</p>
+                    <button class="book-btn">Book Tickets</button>
+                </div>
+            </div>
+
+            <div class="tour-date">
+                <div class="date-info">
+                    <span class="month">APR</span>
+                    <span class="day">05</span>
+                </div>
+                <div class="event-info">
+                    <h3>Miami Beach Festival</h3>
+                    <p>American Airlines Arena</p>
+                    <p>Tickets: $55 - $110</p>
+                    <button class="book-btn">Book Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchandise Store Section -->
+    <section id="merchandise" class="merchandise-section">
+        <h2>Merchandise Store</h2>
+        <div class="merchandise-grid">
+            <div class="product-card">
+                <div class="product-image">👕</div>
+                <h3>Band T-Shirt</h3>
+                <p class="price">$25</p>
+                <p class="description">Classic cotton t-shirt with band logo</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🧢</div>
+                <h3>Baseball Cap</h3>
+                <p class="price">$30</p>
+                <p class="description">Adjustable cap with embroidered logo</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎤</div>
+                <h3>Signed Poster</h3>
+                <p class="price">$45</p>
+                <p class="description">Limited edition signed by all band members</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎧</div>
+                <h3>Premium Hoodie</h3>
+                <p class="price">$55</p>
+                <p class="description">Comfortable hoodie with band artwork</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">💿</div>
+                <h3>Vinyl Album</h3>
+                <p class="price">$35</p>
+                <p class="description">High-quality vinyl with bonus tracks</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">⌚</div>
+                <h3>Branded Watch</h3>
+                <p class="price">$80</p>
+                <p class="description">Stylish watch with band branding</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-tabs">
+            <button class="tab-btn active" onclick="showGallery('photos')">Photos</button>
+            <button class="tab-btn" onclick="showGallery('videos')">Videos</button>
+        </div>
+
+        <!-- Photos Gallery -->
+        <div id="photos" class="gallery-container active">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x300?text=Live+Concert+1" alt="Live Concert 1">
+                <p>Live Concert - London, 2024</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x300?text=Studio+Session" alt="Studio Session">
+                <p>Studio Recording Session</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x300?text=Band+Photoshoot" alt="Band Photoshoot">
+                <p>Official Band Photoshoot</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x300?text=Festival+Performance" alt="Festival Performance">
+                <p>Festival Performance - 2024</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x300?text=Backstage" alt="Backstage">
+                <p>Backstage Moments</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x300?text=Fan+Meet" alt="Fan Meet">
+                <p>Meet & Greet with Fans</p>
+            </div>
+        </div>
+
+        <!-- Videos Gallery -->
+        <div id="videos" class="gallery-container">
+            <div class="gallery-item video">
+                <video width="300" height="300" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <p>Official Music Video - Electric Dreams</p>
+            </div>
+            <div class="gallery-item video">
+                <video width="300" height="300" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <p>Live Performance Highlights</p>
+            </div>
+            <div class="gallery-item video">
+                <video width="300" height="300" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <p>Behind the Scenes Documentary</p>
+            </div>
+            <div class="gallery-item video">
+                <video width="300" height="300" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <p>Music Video - Midnight Echo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> info@rhythmwave.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Address:</strong> 123 Music Street, Los Angeles, CA 90001</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">YouTube</a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rhythm Wave. All rights reserved.</p>
+        <p>Designed with passion for music lovers worldwide.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
